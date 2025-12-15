@@ -12,10 +12,14 @@ export const metadata: Metadata = {
     default: 'Ultra-Low-Latency NIC Drivers | 20-50ns Packet Latency | Krishna Bajpai',
     template: '%s | Ultra-Low-Latency NIC Drivers'
   },
-  description: 'Zero-abstraction network drivers achieving 20-50ns packet receive latency. Direct memory-mapped hardware access for Intel X710, Mellanox ConnectX, and Solarflare NICs. 10x faster than DPDK, 400x faster than kernel sockets. Built by Krishna Bajpai.',
+  description: 'Zero-abstraction network drivers achieving 20-50ns packet receive latency on x86_64 and ARM64. Direct memory-mapped hardware access for Intel X710, Mellanox ConnectX, Broadcom NetXtreme, and Solarflare NICs. Supports Apple Silicon, AWS Graviton, Ampere Altra. 10x faster than DPDK, 400x faster than kernel sockets. Built by Krishna Bajpai.',
   keywords: [
     'ultra low latency',
     'NIC drivers',
+    'ARM64 networking',
+    'Apple Silicon networking',
+    'AWS Graviton drivers',
+    'Ampere Altra networking',
     'kernel bypass',
     'DPDK alternative',
     'direct NIC access',
@@ -24,6 +28,7 @@ export const metadata: Metadata = {
     'high frequency trading',
     'network performance',
     'VFIO drivers',
+    'Broadcom NetXtreme',
     'Solarflare ef_vi',
     'Intel X710',
     'Mellanox ConnectX',
@@ -31,6 +36,8 @@ export const metadata: Metadata = {
     'nanosecond latency',
     'packet processing',
     '20ns latency',
+    '25ns ARM64',
+    'NEON SIMD',
     'custom NIC driver',
     'bare metal networking',
     'hardware acceleration',
@@ -75,7 +82,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://ull-nic.krishnabajpai.me',
     title: 'Ultra-Low-Latency NIC Drivers - 20-50ns Packet Latency',
-    description: 'Zero-abstraction network drivers achieving 20-50ns packet latency. 10x faster than DPDK, 400x faster than kernel sockets. Direct memory-mapped hardware access for Intel X710, Mellanox ConnectX, Solarflare.',
+    description: 'Zero-abstraction network drivers achieving 20-50ns packet latency on x86_64 and ARM64 (Apple Silicon, AWS Graviton, Ampere Altra). 10x faster than DPDK, 400x faster than kernel sockets. Direct memory-mapped hardware access for Intel X710, Mellanox ConnectX, Broadcom NetXtreme, Solarflare.',
     siteName: 'Ultra-Low-Latency NIC Drivers',
     images: [
       {
@@ -90,7 +97,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ultra-Low-Latency NIC Drivers | 20-50ns Latency',
-    description: 'Zero-abstraction network drivers. 10x faster than DPDK. Direct memory-mapped hardware access for sub-microsecond packet processing.',
+    description: 'Zero-abstraction network drivers for x86_64 and ARM64. 10x faster than DPDK. Direct memory-mapped hardware access for sub-microsecond packet processing on Apple Silicon, AWS Graviton, Intel X710, Mellanox ConnectX, Broadcom NetXtreme.',
     creator: '@krishnabajpai',
     site: '@krishnabajpai',
     images: ['/og-image.png'],

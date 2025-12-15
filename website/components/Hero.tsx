@@ -35,9 +35,9 @@ export function Hero() {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Zero-abstraction, memory-mapped hardware access for Intel X710, 
-              Mellanox ConnectX, and Solarflare NICs. Built by systems engineers 
-              for performance-critical applications.
+              Zero-abstraction, memory-mapped hardware access for x86_64 and ARM64 platforms. 
+              Supports Intel X710, Mellanox ConnectX, Broadcom NetXtreme, and Solarflare NICs. 
+              Built for HFT and performance-critical applications.
             </p>
 
             {/* CTA Buttons */}
@@ -63,7 +63,7 @@ export function Hero() {
             {/* Developer Tag */}
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Code className="w-4 h-4" />
-              <span>Built by Krishna Bajpai • Header-only C++17 • Production-ready</span>
+              <span>Built by Krishna Bajpai • Header-only C++17 • x86_64 + ARM64 • Production-ready</span>
             </div>
           </motion.div>
 

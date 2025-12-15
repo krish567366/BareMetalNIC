@@ -10,13 +10,13 @@ export function SEO() {
             '@type': 'SoftwareSourceCode',
             name: 'Ultra-Low-Latency NIC Drivers',
             alternateName: 'ULL NIC Drivers',
-            description: 'Zero-abstraction network drivers achieving 20-50ns packet receive latency. Header-only C++17 library for direct NIC hardware access with VFIO/IOMMU security.',
+            description: 'Zero-abstraction network drivers achieving 20-50ns packet receive latency on x86_64 and ARM64 platforms. Header-only C++17 library for direct NIC hardware access with VFIO/IOMMU security. Supports Apple Silicon, AWS Graviton, Ampere Altra, Intel X710, Mellanox ConnectX, Broadcom NetXtreme, Solarflare.',
             programmingLanguage: {
               '@type': 'ComputerLanguage',
               name: 'C++',
               version: 'C++17',
             },
-            runtimePlatform: 'Linux',
+            runtimePlatform: 'Linux, macOS (ARM64)',
             codeRepository: 'https://github.com/krish567366/BareMetalNIC',
             codeSampleType: 'full solution',
             license: 'https://opensource.org/licenses/MIT',
@@ -27,7 +27,7 @@ export function SEO() {
               email: 'krishna@krishnabajpai.me',
               jobTitle: 'Systems Engineer',
             },
-            keywords: 'ultra low latency, NIC drivers, kernel bypass, DPDK alternative, network performance, memory mapped IO, zero copy, VFIO, Intel X710, Mellanox ConnectX, Solarflare',
+            keywords: 'ultra low latency, NIC drivers, ARM64 networking, Apple Silicon, AWS Graviton, Ampere Altra, kernel bypass, DPDK alternative, network performance, memory mapped IO, zero copy, VFIO, Intel X710, Mellanox ConnectX, Broadcom NetXtreme, Solarflare, NEON SIMD',
             targetProduct: {
               '@type': 'SoftwareApplication',
               name: 'Ultra-Low-Latency NIC Drivers',
@@ -39,11 +39,11 @@ export function SEO() {
                 price: '0',
                 priceCurrency: 'USD',
               },
-              softwareVersion: '1.0.0',
-              releaseNotes: 'Production-ready release with Intel X710, Mellanox ConnectX-5/6, and Solarflare support',
+              softwareVersion: '1.2.0',
+              releaseNotes: 'ARM64 architecture support with NEON SIMD optimizations. Broadcom NetXtreme driver. Supports Apple Silicon, AWS Graviton, Ampere Altra, Intel X710, Mellanox ConnectX-5/6/7, Broadcom BCM575xx/588xx, and Solarflare.',
             },
             datePublished: '2025-12-15',
-            dateModified: '2025-12-15',
+            dateModified: '2025-12-16',
           }),
         }}
       />
@@ -80,7 +80,11 @@ export function SEO() {
             supply: [
               {
                 '@type': 'HowToSupply',
-                name: 'Intel X710/X722, Mellanox ConnectX-5/6, or Solarflare X2522/X2542 NIC',
+                name: 'Compatible NIC: Intel X710/X722, Mellanox ConnectX-5/6/7, Broadcom BCM575xx/588xx, or Solarflare X2522/X2542',
+              },
+              {
+                '@type': 'HowToSupply',
+                name: 'Platform: x86_64 or ARM64 (Apple Silicon, AWS Graviton, Ampere Altra)',
               },
             ],
             step: [
