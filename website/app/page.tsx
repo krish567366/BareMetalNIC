@@ -7,6 +7,7 @@ import { PerformanceCharts } from '@/components/PerformanceCharts'
 import { InteractiveDemo } from '@/components/InteractiveDemo'
 import { UseCases } from '@/components/UseCases'
 import { QuickStart } from '@/components/QuickStart'
+import { Changelog } from '@/components/Changelog'
 import { FAQ } from '@/components/FAQ'
 import { Footer } from '@/components/Footer'
 
@@ -20,6 +21,7 @@ export default function Home() {
       <InteractiveDemo />
       <UseCases />
       <QuickStart />
+      <Changelog />
       <FAQ />
       <Footer />
     </main>

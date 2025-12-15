@@ -121,6 +121,7 @@ export function QuickStart() {
                 <ul className="space-y-1 text-gray-600">
                   <li>• Intel X710/X722 NIC, or</li>
                   <li>• Mellanox ConnectX-5/6, or</li>
+                  <li>• Broadcom BCM575xx/588xx, or</li>
                   <li>• Solarflare X2522/X2542</li>
                   <li>• IOMMU-capable CPU</li>
                 </ul>

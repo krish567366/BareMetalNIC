@@ -115,6 +115,7 @@ export CPLUS_INCLUDE_PATH=$PWD/include:$CPLUS_INCLUDE_PATH
 #include <ull_nic/custom_nic_driver.hpp>    // 20-50ns latency, direct MMIO
 #include <ull_nic/hardware_bridge.hpp>       // Hardware abstraction layer
 #include <ull_nic/kernel_bypass_nic.hpp>     // VFIO/IOMMU kernel bypass
+#include <ull_nic/broadcom_netxtreme.hpp>    // Broadcom BCM575xx/588xx (30-80ns)
 #include <ull_nic/solarflare_efvi.hpp>       // Solarflare-specific (100-200ns)
 
 int main() {
@@ -165,6 +166,7 @@ g++ -std=c++17 -O3 -march=native -flto \
 1. **Supported NICs:**
    - Intel X710 / X722 (i40e driver)
    - Mellanox ConnectX-5 / ConnectX-6 (mlx5 driver)
+   - Broadcom NetXtreme BCM575xx / BCM588xx (bnxt_en driver)
    - Solarflare X2522 / X2542 (for ef_vi driver)
    - Broadcom NetXtreme (bnxt_en driver)
 
@@ -221,6 +223,7 @@ This repository includes **production-ready** driver implementations:
 |------|-------------|---------|----------|
 | **`custom_nic_driver.hpp`** | Zero-abstraction memory-mapped NIC driver | **20-50ns** | HFT, ultra-low latency applications |
 | **`hardware_bridge.hpp`** | Hardware abstraction layer for multi-NIC support | **30-60ns** | Generic applications across NICs |
+| **`broadcom_netxtreme.hpp`** | Broadcom NetXtreme BCM575xx/588xx driver | **30-80ns** | Broadcom NIC deployments |
 | **`kernel_bypass_nic.hpp`** | VFIO/IOMMU kernel bypass framework | **40-70ns** | Secure userspace NIC access |
 | **`solarflare_efvi.hpp`** | Solarflare ef_vi wrapper with optimizations | **100-200ns** | Solarflare-specific deployments |
 | `common_types.hpp` | Shared types and constants | N/A | Included by all drivers |

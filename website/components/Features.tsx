@@ -17,7 +17,7 @@ const features = [
   {
     icon: Code2,
     title: 'Header-Only Library',
-    description: 'Four production drivers included: custom_nic_driver.hpp (fastest), hardware_bridge.hpp (portable), kernel_bypass_nic.hpp (secure), solarflare_efvi.hpp (vendor).',
+    description: 'Five production drivers included: custom_nic_driver.hpp (fastest), broadcom_netxtreme.hpp (BCM575xx/588xx), hardware_bridge.hpp (portable), kernel_bypass_nic.hpp (secure), solarflare_efvi.hpp (vendor).',
   },
   {
     icon: Cpu,
@@ -27,7 +27,7 @@ const features = [
   {
     icon: HardDrive,
     title: 'Multi-NIC Support',
-    description: 'hardware_bridge.hpp auto-detects NIC type (Intel X710/X722, Mellanox ConnectX-5/6, Solarflare X2522/X2542) and loads optimal driver.',
+    description: 'hardware_bridge.hpp auto-detects NIC type (Intel X710/X722, Mellanox ConnectX-5/6, Broadcom NetXtreme BCM575xx/588xx, Solarflare X2522/X2542) and loads optimal driver.',
   },
   {
     icon: Lock,
